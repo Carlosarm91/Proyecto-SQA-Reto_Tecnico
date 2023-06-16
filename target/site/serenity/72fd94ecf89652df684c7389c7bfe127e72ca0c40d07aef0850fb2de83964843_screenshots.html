@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity BDD Report</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="27650f1686b4056f740ccd9b083cb74917f427a9e488b352590daa45953f04df.html">Crear Notas De Texto</a></span>
+                > <span class="truncate-60"><a
+                    href="72fd94ecf89652df684c7389c7bfe127e72ca0c40d07aef0850fb2de83964843.html">Crear una nota de texto enriquecido con letra en negrita </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-06-2023 12:28</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Crear Notas De Texto </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="b89764098f8d732023bbeae1ca1e22cbd7d7e91b7bb1cbb9a75e0e4373029769.html">ESCENARIO 1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Crear una nota de texto enriquecido con letra en negrita
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Dado que estoy en la pagina de inicio de Blogo de Notas Online<br>Cuando creo una nota de texto enriquecido<br><table class='embedded'><tbody><tr><td>&lt;titulo&gt;</td><td>&lt;textoNota&gt;</td></tr></tbody></table><br>Entonces valido la correcta creación "&lt;titulo&gt;"</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="b14e009bbb5efa4b5c93dfd9f32a4277989163c77af61038b72f6dc0583b8e7d.png" title=" 1: Crear una nota de texto enriquecido con letra en negrita ({titulo=Reto, textoNota=texto de prueba para el reto de automatizaciom})" width="1920"/>
+                <img src="b14e009bbb5efa4b5c93dfd9f32a4277989163c77af61038b72f6dc0583b8e7d.png" title=" Dado que estoy en la pagina de inicio de Blogo de Notas Online" width="1920"/>
+                <img src="b14e009bbb5efa4b5c93dfd9f32a4277989163c77af61038b72f6dc0583b8e7d.png" title=" tester opens the browser at https://www.online-notepad.net/es/bloc-de-notas-online" width="1920"/>
+                <img src="b14e009bbb5efa4b5c93dfd9f32a4277989163c77af61038b72f6dc0583b8e7d.png" title=" Dado que estoy en la pagina de inicio de Blogo de Notas Online (completed)" width="1920"/>
+                <img src="a7cd27c1dc95593ca612c1d69f4864b635b7992ddb4005aafaa0a6e8834bc0c9.png" title=" Cuando creo una nota de texto enriquecido
+| Reto | texto de prueba para el reto de automatizaciom |" width="1920"/>
+                <img src="b14e009bbb5efa4b5c93dfd9f32a4277989163c77af61038b72f6dc0583b8e7d.png" title=" Tester crear nota enriquecida" width="1920"/>
+                <img src="a80bc7eeeba2593404a161a015d26ca50789ad9028f87313d5ccb0e26e053574.png" title=" tester clicks on Boton texto enriquecido" width="1920"/>
+                <img src="fd31032f6a344a01a790242c185e95dfcf43c9777ce83c00445c2152765e2aaf.png" title=" tester clicks on Boton texto enriquecido (completed)" width="1920"/>
+                <img src="fd31032f6a344a01a790242c185e95dfcf43c9777ce83c00445c2152765e2aaf.png" title=" tester clicks on Boton texto negrita" width="1920"/>
+                <img src="5578bbf10b1dad70451a0b72caea4f24a6ddc9abae91278aba4ede8bb1218377.png" title=" tester clicks on Boton texto negrita (completed)" width="1920"/>
+                <img src="5578bbf10b1dad70451a0b72caea4f24a6ddc9abae91278aba4ede8bb1218377.png" title=" tester enters 'Reto' into Campo titulo" width="1920"/>
+                <img src="cbb2b0c7442ff0fafe09a9e411c5320af73c46072d1fea95bb2b3a1e2b1db547.png" title=" tester enters 'Reto' into Campo titulo (completed)" width="1920"/>
+                <img src="cbb2b0c7442ff0fafe09a9e411c5320af73c46072d1fea95bb2b3a1e2b1db547.png" title=" tester enters 'texto de prueba para el reto de automatizaciom' into Campo para ingresar texto" width="1920"/>
+                <img src="bfb750a9964db92269e6e4cabd63cfc5ca0fe79eb9483de821ace4d3b7d3d562.png" title=" tester enters 'texto de prueba para el reto de automatizaciom' into Campo para ingresar texto (completed)" width="1920"/>
+                <img src="9701d5abe701a935f1a878a8d89a1486edabd96d7d01d741c320c61fd06570f9.png" title=" tester clicks on Boton guardar" width="1920"/>
+                <img src="4a49181e4737c71c8cfbdd50ecd985c993599e947026463ca768bf92f6b4c48b.png" title=" tester clicks on Boton guardar (completed)" width="1920"/>
+                <img src="4a49181e4737c71c8cfbdd50ecd985c993599e947026463ca768bf92f6b4c48b.png" title=" Tester crear nota enriquecida (completed)" width="1920"/>
+                <img src="4f75f58bc57760bea1791a7468ba30ac7b025f547aefffa34c177a18fe4d04ff.png" title=" Cuando creo una nota de texto enriquecido
+| Reto | texto de prueba para el reto de automatizaciom | (completed)" width="1920"/>
+                <img src="4f75f58bc57760bea1791a7468ba30ac7b025f547aefffa34c177a18fe4d04ff.png" title=" Entonces valido la correcta creaci&oacute;n &quot;Reto&quot;" width="1920"/>
+                <img src="4f75f58bc57760bea1791a7468ba30ac7b025f547aefffa34c177a18fe4d04ff.png" title=" Then validar nota creada should be a string equal to 'Reto' ignoring case: <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.3.6</span>
+</div>
+</body>
+</html>

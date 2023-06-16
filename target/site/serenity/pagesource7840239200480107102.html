@@ -1,0 +1,780 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="es"&gt;<br/>
+ &lt;head&gt; <br/>
+  &lt;meta charset="utf-8"&gt; <br/>
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt; <br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt; <br/>
+  &lt;meta name="csrf-token" content="WwejeRHAmOwzj6HPzUo2zYgAL9ept3wFpnIQHdKy"&gt; <br/>
+  &lt;title&gt;Bloc de notas online | Escribir notas online&lt;/title&gt; <br/>
+  &lt;meta name="description" content="Online-notepad.net es un bloc de notas línea para escribir notas online gratis, guardar, descargar y compartir sus notas en línea."&gt; &lt;!-- Twitter Tages --&gt; <br/>
+  &lt;meta name="twitter:card" content="summary"&gt; <br/>
+  &lt;meta name="twitter:site" content="@Online Notepad"&gt; <br/>
+  &lt;meta name="twitter:creator" content="@Online Notepad"&gt; <br/>
+  &lt;meta name="twitter:title" content="Bloc de notas online | Escribir notas online"&gt; <br/>
+  &lt;meta name="twitter:description" content="Online-notepad.net es un bloc de notas línea para escribir notas online gratis, guardar, descargar y compartir sus notas en línea."&gt; &lt;!-- Facebook Tages --&gt; <br/>
+  &lt;meta property="og:url" content="https://www.online-notepad.net/es/bloc-de-notas-online"&gt; <br/>
+  &lt;meta property="og:type" content="website"&gt; <br/>
+  &lt;meta property="og:title" content="Bloc de notas online | Escribir notas online"&gt; <br/>
+  &lt;meta property="og:description" content="Online-notepad.net es un bloc de notas línea para escribir notas online gratis, guardar, descargar y compartir sus notas en línea."&gt; &lt;!-- Meta Tags --&gt; <br/>
+  &lt;meta name="robots" content="INDEX,FOLLOW"&gt; <br/>
+  &lt;link rel="canonical" href="https://www.online-notepad.net/es/bloc-de-notas-online"&gt; <br/>
+  &lt;link rel="alternate" hreflang="x-default" href="https://www.online-notepad.net/"&gt; <br/>
+  &lt;link rel="alternate" hreflang="en" href="https://www.online-notepad.net"&gt; <br/>
+  &lt;link rel="alternate" hreflang="fr" href="https://www.online-notepad.net/fr/bloc-note-en-ligne"&gt; <br/>
+  &lt;link rel="alternate" hreflang="ru" href="https://www.online-notepad.net/ru/bloknot-onlayn"&gt; <br/>
+  &lt;link rel="alternate" hreflang="tr" href="https://www.online-notepad.net/tr/online-not-defteri"&gt; <br/>
+  &lt;link rel="alternate" hreflang="it" href="https://www.online-notepad.net/it/blocco-note-online"&gt; <br/>
+  &lt;link rel="alternate" hreflang="pl" href="https://www.online-notepad.net/pl/notatnik-online"&gt; <br/>
+  &lt;link rel="icon" type="image/png" sizes="16x16" href="https://www.online-notepad.net/assets/imgs/Favicon.png"&gt; <br/>
+  &lt;meta property="og:image" content="https://www.online-notepad.net/assets/imgs/Social_Banner.png"&gt; <br/>
+  &lt;meta property="og:image:type" content="image/png"&gt; <br/>
+  &lt;meta property="og:image:width" content="1024"&gt; <br/>
+  &lt;meta property="og:image:height" content="1024"&gt; <br/>
+  &lt;link rel="stylesheet" href="https://www.online-notepad.net/assets/bootstrap-5.0.2-dist/css/bootstrap.min.css?v=1.0.0"&gt; <br/>
+  &lt;link type="text/css" href="https://www.online-notepad.net/assets/ck-edit/sample/css/sample.css?v=1.0.0" rel="stylesheet" media="screen"&gt; <br/>
+  &lt;style&gt;<br/>
+        .date{<br/>
+            height: 30px;<br/>
+        }<br/>
+        .noteNameBox {<br/>
+            height: 30px;<br/>
+        }<br/>
+        #noteName{<br/>
+            font-size: 20px !important;<br/>
+        }<br/>
+        .WS_ad_l,<br/>
+        .WS_ad_r{<br/>
+            max-width: 120px;<br/>
+            width: 120px;<br/>
+            max-height: 600px;<br/>
+            height: 600px;<br/>
+            position: absolute;<br/>
+            top: 0;<br/>
+            border:none;<br/>
+        }<br/>
+        .WS_ad_l{<br/>
+            left: 0;<br/>
+        }<br/>
+        .WS_ad_r{<br/>
+            right:0;<br/>
+        }<br/>
+<br/>
+        .reponsiveAds { width: 320px; height: 100px; }<br/>
+        @media(min-width: 500px) { .reponsiveAds { width: 468px; height: 60px; } }<br/>
+        @media(min-width: 800px) { .reponsiveAds { width: 728px; height: 90px; } }<br/>
+    &lt;/style&gt; <br/>
+  &lt;link rel="stylesheet" href="https://www.online-notepad.net/assets/css/notepadstyle.css?v=1.1.0"&gt; <br/>
+  &lt;script type="text/javascript"&gt;<br/>
+        var base_url = "https://www.online-notepad.net";<br/>
+        var site_url = "https://www.online-notepad.net";<br/>
+    &lt;/script&gt; &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt; <br/>
+  &lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-EBPVSE332N"&gt;&lt;/script&gt; <br/>
+  &lt;script&gt;<br/>
+    window.dataLayer = window.dataLayer || [];<br/>
+    function gtag(){dataLayer.push(arguments);}<br/>
+    gtag('js', new Date());<br/>
+<br/>
+    gtag('config', 'G-EBPVSE332N');<br/>
+    &lt;/script&gt; <br/>
+  &lt;style&gt;<br/>
+        .reponsiveAds { width: 320px; height: 100px; }<br/>
+        @media(min-width: 500px) { .reponsiveAds { width: 468px; height: 60px; } }<br/>
+        @media(min-width: 800px) { .reponsiveAds { width: 728px; height: 90px; } }<br/>
+<br/>
+        .example_responsive_1 {<br/>
+            width: 320px;<br/>
+            height: 100px;<br/>
+        }<br/>
+<br/>
+        @media(min-width: 500px) {<br/>
+            .example_responsive_1 {<br/>
+                width: 468px;<br/>
+                height: 60px;<br/>
+            }<br/>
+        }<br/>
+<br/>
+        @media(min-width: 800px) {<br/>
+            .example_responsive_1 {<br/>
+                width: 728px;<br/>
+                height: 90px;<br/>
+            }<br/>
+        }<br/>
+<br/>
+        .my-sticky-div {<br/>
+            position: fixed;<br/>
+            bottom: 0;<br/>
+            z-index: 9999999;<br/>
+            transition: all 0.3s ease-in-out;<br/>
+        }<br/>
+<br/>
+        .toggleButton {<br/>
+            position: absolute;<br/>
+            top: 0;<br/>
+            height: 40px;<br/>
+            border-radius: 50%;<br/>
+            right: 0;<br/>
+            width: 40px;<br/>
+            z-index: 99999;<br/>
+            display: flex;<br/>
+            align-items: self-end;<br/>
+            justify-content: center;<br/>
+        }<br/>
+<br/>
+        .toggleButton img {<br/>
+            width: 20px;<br/>
+        }<br/>
+<br/>
+        .rotate {<br/>
+            transform: rotate(178deg);<br/>
+        }<br/>
+<br/>
+        .bottom {<br/>
+            bottom: -110px;<br/>
+        }<br/>
+<br/>
+        .toggleButton {<br/>
+            background-color: #fff;<br/>
+        }<br/>
+        .ad-zone{<br/>
+            height: auto;<br/>
+        }<br/>
+    &lt;/style&gt; <br/>
+ &lt;/head&gt; <br/>
+ &lt;body&gt; <br/>
+  &lt;div class="position-fixed bottom-0 start-0 p-2" style="z-index: 9999"&gt; <br/>
+   &lt;div id="msgToast" class="toast fade hide bg-success text-white" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true"&gt; <br/>
+    &lt;div class="toast-body text-center"&gt;&lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+  &lt;/div&gt; <br/>
+  &lt;header id="notepad-nav"&gt; <br/>
+   &lt;nav id="navbar " class="navbar sticky-top navbar-expand-lg navbar-light text-light"&gt; <br/>
+    &lt;div class="container"&gt; &lt;span style="line-height: 0"&gt; &lt;a class="navbar-brand" id="logoURL" href="https://www.online-notepad.net/es/bloc-de-notas-online"&gt; &lt;img class="logo d-inline" style="vertical-align: sub" src="https://www.online-notepad.net/assets/imgs/Icons/list1.svg" alt="Online Notepad" width="36px" height="38px"&gt; &lt;h1 class="d-inline"&gt;bloc de notas online&lt;/h1&gt; &lt;/a&gt; &lt;/span&gt; &lt;button class="navbar-toggler" onclick="openMenu()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"&gt; &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt; &lt;/button&gt; <br/>
+     &lt;div class="collapse navbar-collapse fixednavonmobile" id="navbarSupportedContent"&gt; <br/>
+      &lt;ul class="navbar-nav ms-auto mb-2 mb-lg-0"&gt; <br/>
+       &lt;li class="nav-item"&gt; &lt;a class="nav-link  " aria-current="page" href="https://www.online-notepad.net"&gt;Hogar&lt;/a&gt; &lt;/li&gt; <br/>
+       &lt;li class="nav-item"&gt; &lt;a class="nav-link header-nav-link" aria-current="page" href="https://www.online-notepad.net/how-it-works"&gt;¿Cómo funciona?&lt;/a&gt; &lt;/li&gt; <br/>
+       &lt;li class="nav-item"&gt; &lt;a class="nav-link header-nav-link" aria-current="page" href="https://www.online-notepad.net/blog"&gt;Blog&lt;/a&gt; &lt;/li&gt; <br/>
+       &lt;li class="nav-item mb-lg-0 mb-2"&gt; &lt;/li&gt; <br/>
+       &lt;li class="nav-item"&gt; &lt;a href="https://www.online-notepad.net/contact-us" class="btn notepad-btn px-4"&gt; Contacta con nosotras &lt;/a&gt; &lt;/li&gt; <br/>
+       &lt;li class="nav-item dropdown"&gt; &lt;a class="dropdown-toggle ms-0 ms-md-3 mt-3 mt-md-0 me-0 btn btn-outline-light text-dark border-dark" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"&gt; &lt;img class="rounded-circle me-2" width="22px" src="https://www.online-notepad.net/assets/imgs/flags/es.svg" alt="es"&gt; Española &lt;/a&gt; <br/>
+        &lt;ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: fit-content"&gt; <br/>
+         &lt;li class="drophover flag dropdown-item w-auto p-0 pe-3"&gt;&lt;a href="https://www.online-notepad.net" data-href="https://www.online-notepad.net" class="drophover dropdown-item text-capitalize choosedLang"&gt;<br/>
+           &lt;div class="d-flex w-auto align-items-center"&gt;<br/>
+            &lt;img style="width: 25px" class="rounded-circle me-2 img-fluid" src="https://www.online-notepad.net/assets/imgs/flags/us.svg" alt="en"&gt;English<br/>
+           &lt;/div&gt; &lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;li class="drophover flag dropdown-item w-auto p-0 pe-3"&gt;&lt;a href="https://www.online-notepad.net/fr/bloc-note-en-ligne" data-href="https://www.online-notepad.net/fr/bloc-note-en-ligne" class="drophover dropdown-item text-capitalize choosedLang"&gt;<br/>
+           &lt;div class="d-flex w-auto align-items-center"&gt;<br/>
+            &lt;img style="width: 25px" class="rounded-circle me-2 img-fluid" src="https://www.online-notepad.net/assets/imgs/flags/fr.svg" alt="fr"&gt;Française<br/>
+           &lt;/div&gt; &lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;li class="drophover flag dropdown-item w-auto p-0 pe-3"&gt;&lt;a href="https://www.online-notepad.net/es/bloc-de-notas-online" data-href="https://www.online-notepad.net/es/bloc-de-notas-online" class="drophover dropdown-item text-capitalize choosedLang"&gt;<br/>
+           &lt;div class="d-flex w-auto align-items-center"&gt;<br/>
+            &lt;img style="width: 25px" class="rounded-circle me-2 img-fluid" src="https://www.online-notepad.net/assets/imgs/flags/es.svg" alt="es"&gt;Española<br/>
+           &lt;/div&gt; &lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;li class="drophover flag dropdown-item w-auto p-0 pe-3"&gt;&lt;a href="https://www.online-notepad.net/ru/bloknot-onlayn" data-href="https://www.online-notepad.net/ru/bloknot-onlayn" class="drophover dropdown-item text-capitalize choosedLang"&gt;<br/>
+           &lt;div class="d-flex w-auto align-items-center"&gt;<br/>
+            &lt;img style="width: 25px" class="rounded-circle me-2 img-fluid" src="https://www.online-notepad.net/assets/imgs/flags/ru.svg" alt="ru"&gt;�&nbsp;у�?�?кий<br/>
+           &lt;/div&gt; &lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;li class="drophover flag dropdown-item w-auto p-0 pe-3"&gt;&lt;a href="https://www.online-notepad.net/tr/online-not-defteri" data-href="https://www.online-notepad.net/tr/online-not-defteri" class="drophover dropdown-item text-capitalize choosedLang"&gt;<br/>
+           &lt;div class="d-flex w-auto align-items-center"&gt;<br/>
+            &lt;img style="width: 25px" class="rounded-circle me-2 img-fluid" src="https://www.online-notepad.net/assets/imgs/flags/tr.svg" alt="tr"&gt;Türk<br/>
+           &lt;/div&gt; &lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;li class="drophover flag dropdown-item w-auto p-0 pe-3"&gt;&lt;a href="https://www.online-notepad.net/it/blocco-note-online" data-href="https://www.online-notepad.net/it/blocco-note-online" class="drophover dropdown-item text-capitalize choosedLang"&gt;<br/>
+           &lt;div class="d-flex w-auto align-items-center"&gt;<br/>
+            &lt;img style="width: 25px" class="rounded-circle me-2 img-fluid" src="https://www.online-notepad.net/assets/imgs/flags/it.svg" alt="it"&gt;Italianao<br/>
+           &lt;/div&gt; &lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;li class="drophover flag dropdown-item w-auto p-0 pe-3"&gt;&lt;a href="https://www.online-notepad.net/pl/notatnik-online" data-href="https://www.online-notepad.net/pl/notatnik-online" class="drophover dropdown-item text-capitalize choosedLang"&gt;<br/>
+           &lt;div class="d-flex w-auto align-items-center"&gt;<br/>
+            &lt;img style="width: 25px" class="rounded-circle me-2 img-fluid" src="https://www.online-notepad.net/assets/imgs/flags/pl.svg" alt="pl"&gt;Polish<br/>
+           &lt;/div&gt; &lt;/a&gt;&lt;/li&gt; <br/>
+        &lt;/ul&gt; &lt;/li&gt; <br/>
+      &lt;/ul&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/nav&gt; <br/>
+  &lt;/header&gt; <br/>
+  &lt;div class="content"&gt; <br/>
+   &lt;section id="notepad-section" class="position-relative"&gt; <br/>
+    &lt;div class="container"&gt; <br/>
+     &lt;div class="row"&gt; <br/>
+      &lt;div class="border-0 text-center w-100"&gt; <br/>
+       &lt;ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6081967606533178" data-ad-slot="4195002517" data-ad-format="auto" data-full-width-responsive="true"&gt;&lt;/ins&gt; <br/>
+       &lt;script&gt;<br/>
+                        (adsbygoogle = window.adsbygoogle || []).push({});<br/>
+                    &lt;/script&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="col-lg-3 d-none d-md-block d-lg-block gx-0 mt-3" style="margin-top: 6.7%;"&gt; <br/>
+       &lt;div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"&gt; &lt;button class="nav-link vNav active" id="plaintextnote-tab" data-bs-toggle="pill" data-bs-target="#plaintextnote" type="button" role="tab" aria-controls="plaintextnote" aria-selected="true"&gt;Nota de texto sin formato&lt;/button&gt; &lt;button class="nav-link vNav" id="richtextnote-tab" data-bs-toggle="pill" data-bs-target="#richtextnote" type="button" role="tab" aria-controls="richtextnote" aria-selected="false"&gt;Nota de texto enriquecido&lt;/button&gt; &lt;button class="nav-link vNav" id="tasklist-tab" data-bs-toggle="pill" data-bs-target="#tasklist" type="button" role="tab" aria-controls="tasklist" aria-selected="false"&gt;Lista de tareas&lt;/button&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="border-0 text-center w-100"&gt; <br/>
+        &lt;ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6081967606533178" data-ad-slot="4195002517" data-ad-format="auto" data-full-width-responsive="true"&gt;&lt;/ins&gt; <br/>
+        &lt;script&gt;<br/>
+                                (adsbygoogle = window.adsbygoogle || []).push({});<br/>
+                            &lt;/script&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="col-lg-6 mt-3"&gt; <br/>
+       &lt;div class="d-flex justify-content-between flex-wrap"&gt; <br/>
+        &lt;div class="noteNameBox "&gt; <br/>
+         &lt;input class="fs-24 date d-inline-block" id="noteName" value="Note_1, 16-Jun-2023"&gt; <br/>
+         &lt;img loading="lazy" src="https://www.online-notepad.net/assets/imgs/writing.svg" width="20px" height="23px" id="editNoteName" alt="write-name"&gt; <br/>
+        &lt;/div&gt; <br/>
+        &lt;div class="navbar pt-0 pb-0 navbar-expand"&gt; <br/>
+         &lt;div class="navbar-nav d-block d-md-none d-lg-none my-2 my-md-0 my-lg-0"&gt; <br/>
+          &lt;li class="dropdown"&gt; &lt;a class="nav-link dropdown-toggle selecttabs" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"&gt; Plain Text Note &lt;/a&gt; <br/>
+           &lt;ul class="dropdown-menu my-dropdown nav-pills mb-3" id="pills-tab" role="tablist"&gt; <br/>
+            &lt;ul class="nav nav-pills" id="pills-tab" role="tablist"&gt; <br/>
+             &lt;li class="nav-item drop-tab" role="presentation"&gt; &lt;button class="nav-link select-drop-items" id="plaintextnote-tab" data-bs-toggle="tab" data-bs-target="#plaintextnote" type="button" role="tab" aria-controls="plaintextnote" aria-selected="true"&gt;Plain Text Note &lt;/button&gt; &lt;/li&gt; <br/>
+             &lt;li class="nav-item drop-tab" role="presentation"&gt; &lt;button class="nav-link select-drop-items" id="richtextnote-tab" data-bs-toggle="pill" data-bs-target="#richtextnote" type="button" role="tab" aria-controls="richtextnote" aria-selected="false"&gt;Rich Text Note &lt;/button&gt; &lt;/li&gt; <br/>
+             &lt;li class="nav-item drop-tab" role="presentation"&gt; &lt;button class="nav-link select-drop-items" id="tasklist-tab" data-bs-toggle="pill" data-bs-target="#tasklist" type="button" role="tab" aria-controls="tasklist" aria-selected="false"&gt;Task List &lt;/button&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt; <br/>
+           &lt;/ul&gt; &lt;/li&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="nav-item note-pad-opt mx-3 mx-md-0 mx-lg-0"&gt; <br/>
+          &lt;form action="" id="importFileForm"&gt; <br/>
+           &lt;input type="hidden" name="_token" value="WwejeRHAmOwzj6HPzUo2zYgAL9ept3wFpnIQHdKy"&gt; <br/>
+           &lt;div class="upload-btn-wrapper"&gt; &lt;button class="btn import" id="fileImportBtn"&gt; &lt;span&gt; &lt;img src="https://www.online-notepad.net/assets/imgs/Icons/Import icon.svg" alt="icon" width="18px" height="18px"&gt;&lt;/span&gt; Importar Word/Pdf/.Txt &lt;span span="" class="spinner-border spinner text-dark" role="status"&gt; &lt;span class="sr-only visually-hidden"&gt;Loading...&lt;/span&gt; &lt;/span&gt; &lt;/button&gt; <br/>
+            &lt;input type="file" name="myfile" id="importedFile" accept=".pdf,.doc,.docx,.txt"&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/form&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="text-area-nav"&gt; <br/>
+        &lt;nav class="navbar navbar-expand navbar-light bg-white"&gt; <br/>
+         &lt;div class="container-fluid px-1 px-md-2 px-lg-2"&gt; <br/>
+          &lt;form method="GET" action="https://www.google.com/search" class="d-flex d-md-block  align-items-center" target="_blank"&gt; &lt;span&gt;&lt;img loading="lazy" src="https://www.online-notepad.net/assets/icons/google.png" alt="Búsqueda de Google" width="15px" height="15px"&gt; &lt;/span&gt; <br/>
+           &lt;input class="nav-search-bar me-2" type="search" name="q" placeholder="Búsqueda de Google" aria-label="Search" id="googleSearch"&gt; <br/>
+          &lt;/form&gt; <br/>
+          &lt;div class="collapse navbar-collapse" id="navbarSupportedContent"&gt; <br/>
+           &lt;ul class="nav list-unstyled ms-auto"&gt; <br/>
+            &lt;li&gt; &lt;a class="navbar-brand inner-item me-2 me-lg-4" href="" id="newNote"&gt; &lt;img src="https://www.online-notepad.net/assets/icons/new-note.svg" alt="New note" width="16px" height="20px"&gt; &lt;span&gt;Nueva nota&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;li&gt; &lt;a class="navbar-brand inner-item me-0 me-lg-4" id="lockNote" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer;"&gt; &lt;img src="https://www.online-notepad.net/assets/icons/lock-file.svg" alt="Lock Your File" width="15px" height="19px"&gt; &lt;span&gt;Cerrar&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;/ul&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/nav&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="tab-content" id="myTabContent"&gt; &lt;!-- pill #1 --&gt; <br/>
+        &lt;div class="tab-pane fade show active" id="plaintextnote" role="tabpanel" aria-labelledby="plaintextnote-tab"&gt; <br/>
+         &lt;div class="paper"&gt; <br/>
+          &lt;div class=""&gt; &lt;textarea class="paper-content plaintextnote note_editors" id="input" oninput="calculate(); savedata()" onkeyup="count_it()" autofocus cols="117" rows="15"&gt;&lt;/textarea&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="d-flex justify-content-between flex-wrap"&gt; <br/>
+          &lt;div class="mt-2 mb-2 mb-md-0 mb-lg-0"&gt; &lt;span&gt;&lt;strong&gt;Línea&lt;/strong&gt;&lt;span type="text" class="line-counter-input ms-1 me-3" name="lineCount" size="2" value="0" id="linecounter" disabled&gt;0&lt;/span&gt;&lt;/span&gt; &lt;span class=""&gt;&lt;strong&gt;Caracteres&lt;/strong&gt;&lt;span class="ms-1 me-3" id="counter"&gt;0&lt;/span&gt; &lt;/span&gt; &lt;span&gt;&lt;strong&gt;Palabras&lt;/strong&gt;&lt;span id="words" class="ms-1"&gt;0&lt;/span&gt;&lt;/span&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="d-flex align-items-center flex-wrap"&gt; &lt;button class="btn save-file-btn saveNotesBtn plaintextnoteBtn" data-url="/note/save" data-updateid=""&gt; &lt;span span="" class="spinner-border spinner text-dark" role="status"&gt; &lt;span class="sr-only visually-hidden"&gt;Loading...&lt;/span&gt; &lt;/span&gt; Ahorrar &lt;/button&gt; <br/>
+           &lt;input type="hidden" value=""&gt; <br/>
+           &lt;div class="dropdown"&gt; &lt;button class="btn  text-dark dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"&gt; &lt;span&gt; &lt;img src="https://www.online-notepad.net/assets/imgs/Icons/Icon awesome-download.svg" alt="Download your file" width="15px" height="15px"&gt;&lt;/span&gt; &lt;span class="selectedTextdropdown"&gt;Guardar descarga&lt;/span&gt; &lt;span span="" class="spinner-border spinner text-dark" role="status"&gt; &lt;span class="sr-only visually-hidden"&gt;Loading...&lt;/span&gt; &lt;/span&gt; &lt;/button&gt; <br/>
+            &lt;ul class="dropdown-menu" aria-labelledby="dropdownMenuLink"&gt; <br/>
+             &lt;li&gt;&lt;a class="dropdown-item downloadBtn" data-filetype=".pdf" href=""&gt;PDF File&lt;/a&gt;&lt;/li&gt; <br/>
+             &lt;li&gt;&lt;a class="dropdown-item downloadBtn" data-filetype=".doc" href=""&gt;Word Doc&lt;/a&gt;&lt;/li&gt; <br/>
+             &lt;li&gt;&lt;a class="dropdown-item downloadBtn" data-filetype=".docx" href=""&gt;Word Docx&lt;/a&gt;&lt;/li&gt; <br/>
+             &lt;li&gt;&lt;a class="dropdown-item downloadBtn" data-filetype=".txt" href=""&gt;.Txt&lt;/a&gt;&lt;/li&gt; <br/>
+            &lt;/ul&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="row my-3"&gt; <br/>
+          &lt;div class="d-flex justify-content-center mx-auto"&gt; &lt;!-- &lt;ins class="adsbygoogle reponsiveAds" style="display:block;" data-ad-client="ca-pub-6081967606533178" data-ad-slot="2679903269" data-size="auto"&gt;&lt;/ins&gt; --&gt; <br/>
+           &lt;ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-6081967606533178" data-ad-slot="5484573386"&gt;&lt;/ins&gt; <br/>
+           &lt;script&gt;<br/>
+                                        (adsbygoogle = window.adsbygoogle || []).push({});<br/>
+                                    &lt;/script&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; &lt;!-- pill #2 --&gt; <br/>
+        &lt;div class="tab-pane fade" id="richtextnote" role="tabpanel" aria-labelledby="richtextnote-tab"&gt; <br/>
+         &lt;main&gt; <br/>
+          &lt;div class="centered"&gt; <br/>
+           &lt;div class="document-editor"&gt; <br/>
+            &lt;div class="toolbar-container"&gt;&lt;/div&gt; <br/>
+            &lt;div class="content-container"&gt; <br/>
+             &lt;div id="editor" name="richNote" oninput="richcalCulate()" autofocus cols="100" rows="10"&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/main&gt; &lt;!-- counter end --&gt; <br/>
+         &lt;div class="d-flex justify-content-end flex-wrap align-items-center"&gt; &lt;button class="btn save-file-btn saveNotesBtn richtextnoteBtn" data-url="/note/save" data-updateid=""&gt; &lt;span span="" class="spinner-border spinner text-dark" role="status"&gt; &lt;span class="sr-only visually-hidden"&gt;Loading...&lt;/span&gt; &lt;/span&gt; Ahorrar &lt;/button&gt; <br/>
+          &lt;input type="hidden" value=""&gt; <br/>
+          &lt;div class="dropdown"&gt; &lt;a class="btn  text-dark dropdown-toggle" href="" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false"&gt; &lt;span&gt; &lt;img loading="lazy" src="https://www.online-notepad.net/assets/imgs/Icons/Icon awesome-download.svg" alt="download your file"&gt;&lt;/span&gt; &lt;span class="selectedTextdropdown"&gt; Guardar descarga&lt;/span&gt; &lt;span span="" class="spinner-border spinner text-dark" role="status"&gt; &lt;span class="sr-only visually-hidden"&gt;Loading...&lt;/span&gt; &lt;/span&gt; &lt;/a&gt; <br/>
+           &lt;ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2"&gt; <br/>
+            &lt;li&gt;&lt;a class="dropdown-item downloadBtn" data-filetype=".pdf" href=""&gt;PDF File&lt;/a&gt;&lt;/li&gt; <br/>
+            &lt;li&gt;&lt;a class="dropdown-item downloadBtn" data-filetype=".doc" href=""&gt;Word Doc&lt;/a&gt;&lt;/li&gt; <br/>
+            &lt;li&gt;&lt;a class="dropdown-item downloadBtn" data-filetype=".docx" href=""&gt;Word Docx&lt;/a&gt;&lt;/li&gt; <br/>
+            &lt;li&gt;&lt;a class="dropdown-item downloadBtn" data-filetype=".txt" href=""&gt;.Txt&lt;/a&gt;&lt;/li&gt; <br/>
+           &lt;/ul&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; &lt;!-- pill #3 --&gt; <br/>
+        &lt;div class="tab-pane fade" id="tasklist" role="tabpanel" aria-labelledby="tasklist-tab"&gt; <br/>
+         &lt;div class="your-list" style="min-height:320px;"&gt; <br/>
+          &lt;ul class="list-unstyled" id="sortable"&gt; <br/>
+          &lt;/ul&gt; <br/>
+          &lt;div class="d-flex justify-content-between"&gt; <br/>
+           &lt;input class="add-list-input form-control" id="my-list" type="text" name="" placeholder="Add New Task Here" onkeypress="if(window.event.keyCode==13)addNewList()"&gt; &lt;button class="btn add-list-btn" id="addnewlist"&gt; &lt;img loading="lazy" src="https://www.online-notepad.net/assets/icons/tick.svg" alt="tick icon"&gt; &lt;/button&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="d-flex justify-content-end flex-wrap align-items-center"&gt; &lt;button class="btn save-file-btn saveNotesBtn tasklistBtn" data-url="/note/save" data-updateid=""&gt; &lt;span span="" class="spinner-border spinner text-dark" role="status"&gt; &lt;span class="sr-only visually-hidden"&gt;Loading...&lt;/span&gt; &lt;/span&gt; Ahorrar &lt;/button&gt; <br/>
+          &lt;input type="hidden" value=""&gt; <br/>
+          &lt;div class="dropdown"&gt; &lt;a class="btn  text-dark dropdown-toggle" href="" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false"&gt; &lt;span&gt; &lt;img loading="lazy" src="https://www.online-notepad.net/assets/imgs/Icons/Icon awesome-download.svg" alt="download icon"&gt;&lt;/span&gt; &lt;span class="selectedTextdropdown"&gt; Guardar descarga&lt;/span&gt; &lt;span span="" class="spinner-border spinner text-dark" role="status"&gt; &lt;span class="sr-only visually-hidden"&gt;Loading...&lt;/span&gt; &lt;/span&gt; &lt;/a&gt; <br/>
+           &lt;ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2"&gt; <br/>
+            &lt;li&gt;&lt;a class="dropdown-item downloadBtn" data-filetype=".pdf" href=""&gt;PDF File&lt;/a&gt;&lt;/li&gt; <br/>
+            &lt;li&gt;&lt;a class="dropdown-item downloadBtn" data-filetype=".doc" href=""&gt;Word Doc&lt;/a&gt;&lt;/li&gt; <br/>
+            &lt;li&gt;&lt;a class="dropdown-item downloadBtn" data-filetype=".docx" href=""&gt;Word Docx&lt;/a&gt;&lt;/li&gt; <br/>
+            &lt;li&gt;&lt;a class="dropdown-item downloadBtn" data-filetype=".txt" href=""&gt;.Txt&lt;/a&gt;&lt;/li&gt; <br/>
+           &lt;/ul&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="col-lg-3"&gt; <br/>
+       &lt;div class="border-0 text-center w-100 mt-3"&gt; <br/>
+        &lt;ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6081967606533178" data-ad-slot="4195002517" data-ad-format="auto" data-full-width-responsive="true"&gt;&lt;/ins&gt; <br/>
+        &lt;script&gt;<br/>
+                                (adsbygoogle = window.adsbygoogle || []).push({});<br/>
+                            &lt;/script&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="form search-form mt-3"&gt; <br/>
+        &lt;img loading="lazy" class="fa fa-search" src="https://www.online-notepad.net/assets/imgs/icons8-search.svg" alt="Búsqueda"&gt; <br/>
+        &lt;input type="text" class="form-control form-input" id="noteSearch" placeholder="Búsqueda"&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="side-bar"&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="noteItem mt-4" id="notFoundMsg" style="display: none"&gt; <br/>
+        &lt;div class="w-100 text-center"&gt; <br/>
+         &lt;h5&gt; Notes Not Found &lt;/h5&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/section&gt; &lt;!-- What does online notepad do --&gt; <br/>
+   &lt;section class="purpose py-40"&gt; <br/>
+    &lt;div class="container"&gt; <br/>
+     &lt;div class="row align-items-center"&gt; <br/>
+      &lt;div class="col-lg-7"&gt; <br/>
+       &lt;h3 class="service-card-heading"&gt;Lo que puede hacer con este bloc de notas en línea gratuito&lt;/h3&gt; <br/>
+       &lt;ul&gt; <br/>
+        &lt;li&gt;Use este bloc de notas en línea gratuito para tomar notas rápidas&lt;/li&gt; <br/>
+        &lt;li&gt;Uso del modo de editor de texto enriquecido para formato avanzado.&lt;/li&gt; <br/>
+        &lt;li&gt;Por crear una lista de tareas sencilla y editable con este WordPad en línea.&lt;/li&gt; <br/>
+        &lt;li&gt;Para anotar texto en línea e instantáneamente para conservar nuevas ideas.&lt;/li&gt; <br/>
+        &lt;li&gt;Nuestro bloc de notas en línea viene con función de protección de contraseña.&lt;/li&gt; <br/>
+        &lt;li&gt;Te ayuda a escribir publicaciones en redes sociales con recuento de palabras/caracteres en vivo.&lt;/li&gt; <br/>
+        &lt;li&gt;Este cuaderno en línea gratuito le permite escribir blogs y artículos en línea.&lt;/li&gt; <br/>
+       &lt;/ul&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="col-lg-5 text-end d-lg-block d-none"&gt; <br/>
+       &lt;img class="img-fluid" src="https://www.online-notepad.net/assets/imgs/featuresbanner.svg" alt="featuresbanner" width="365" height="365"&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/section&gt; &lt;!-- how it works new section --&gt; <br/>
+   &lt;section class="howit-works py-40"&gt; <br/>
+    &lt;div class="container"&gt; <br/>
+     &lt;h3 class="service-card-heading text-center"&gt;¿Como funciona?&lt;/h3&gt; <br/>
+     &lt;div class="row"&gt; <br/>
+      &lt;div class="col-lg-4 mb-4 mb-md-0 mb-lg-0"&gt; <br/>
+       &lt;div class="how-card"&gt; <br/>
+        &lt;img src="https://www.online-notepad.net/assets/imgs/Import.svg" alt="Import"&gt; <br/>
+        &lt;h4&gt;Escriba o importe su archivo&lt;/h4&gt; <br/>
+        &lt;p&gt;Simplemente visite nuestro block de notas online a través de cualquier navegador de su elección o el que ya está disponible. No importa qué máquina o sistema operativo esté usando, simplemente vaya a online-notepad.net y comience a usar nuestro bloc de notas online para escribir una nota.&lt;/p&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="col-lg-4 mb-4 mt-5 mb-md-0 mb-lg-0 mt-md-0 mt-lg-0"&gt; <br/>
+       &lt;div class="how-card"&gt; <br/>
+        &lt;img src="https://www.online-notepad.net/assets/imgs/Edit.svg" alt="Import"&gt; <br/>
+        &lt;h4&gt;Edite su archivo aquí&lt;/h4&gt; <br/>
+        &lt;p&gt;Ahora comience a escribir directamente en la página que aparece en nuestro bloc notas online o importe un archivo ya existente desde su computadora para continuar o editar. Seleccione su opción preferida de "texto sin formato" o "texto enriquecido", lo que se adapte a su propósito.&lt;/p&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="col-lg-4 mt-5 mt-md-0 mt-lg-0"&gt; <br/>
+       &lt;div class="how-card"&gt; <br/>
+        &lt;img src="https://www.online-notepad.net/assets/imgs/Download.svg" alt="Download"&gt; <br/>
+        &lt;h4&gt;Descargar archivo&lt;/h4&gt; <br/>
+        &lt;p&gt;Una vez que haya terminado de escribir, haga lo que quiera con su nota, edítela para mayor claridad o mejor formato, compártala con otras personas, obtenga una vista previa, guárdela, cifre con la opción de bloqueo o simplemente descárguela de nuestro editor de texto en línea.&lt;/p&gt; <br/>
+        &lt;p&gt;&nbsp;&lt;/p&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/section&gt; <br/>
+   &lt;section class="purpose py-40 whoCanUse"&gt; <br/>
+    &lt;div class="container"&gt; <br/>
+     &lt;div class="row align-items-center"&gt; <br/>
+      &lt;div class="col-lg-7"&gt; <br/>
+       &lt;h3 class="service-card-heading"&gt;¿Quién puede usar este bloc notas online?&lt;/h3&gt; <br/>
+       &lt;ul&gt; <br/>
+        &lt;li&gt;Los estudiantes pueden usar este editor de notas en línea para escribir ensayos, tareas y tareas diarias.&lt;/li&gt; <br/>
+        &lt;li&gt;Los escritores pueden usar este bloc de notas en línea para escribir blogs y artículos.&lt;/li&gt; <br/>
+        &lt;li&gt;Los empresarios pueden guardar ideas, enlaces, puntos breves en este editor de texto en línea.&lt;/li&gt; <br/>
+        &lt;li&gt;Los administradores de contenido pueden usar el bloc de notas gratuito para formatear el texto.&lt;/li&gt; <br/>
+        &lt;li&gt;Los investigadores pueden mantener el registro de varios trabajos de investigación.&lt;/li&gt; <br/>
+        &lt;li&gt;Los usuarios comunes pueden escribir un diario en el bloc de notas en línea y bloquearlo con cifrado.&lt;/li&gt; <br/>
+       &lt;/ul&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="col-lg-5 text-end d-lg-block d-none"&gt; <br/>
+       &lt;img class="img-fluid" src="https://www.online-notepad.net/assets/imgs/whocanuseBanner.png" alt="whocanuseBanner"&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/section&gt; &lt;!-- best section here --&gt; <br/>
+   &lt;section class="pt-5 pb-2 pb-md-5"&gt; <br/>
+    &lt;div class="container"&gt; <br/>
+     &lt;div class="row position-relative"&gt; <br/>
+      &lt;h3 class="service-card-heading text-center mb-5"&gt;Best bloc de notas online y Editor de texto&lt;/h3&gt; <br/>
+      &lt;div class="col-lg-6 d-lg-block pe-lg-0 d-none text-center"&gt; <br/>
+       &lt;img loading="lazy" class="img-fluid mt-5 pt-5" src="https://www.online-notepad.net/assets/imgs/Icons/content-img.svg" height="500" width="400" alt="img"&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="col-lg-6 ps-lg-0"&gt; <br/>
+       &lt;div class="single-step"&gt; <br/>
+        &lt;div class="list-head"&gt; <br/>
+         &lt;div class="why-best-icon"&gt; <br/>
+          &lt;img loading="lazy" src="https://www.online-notepad.net/assets/imgs/Icons/list1.svg" alt="easy note pad" width="38px" height="38px"&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div&gt; <br/>
+          &lt;h4 class="step-hd"&gt;Toma de notas fácil&lt;/h4&gt; <br/>
+          &lt;p&gt;Ya sea personal u oficial, escribe lo que quieras desde cualquier lugar y en cualquier momento en nuestro bloc de notas en linea con la máxima facilidad de acceso y uso. Vaya a online-notepad.net, escriba, guarde y listo. Tan simple como eso.&lt;/p&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="single-step"&gt; <br/>
+        &lt;div class="list-head"&gt; <br/>
+         &lt;div class="why-best-icon"&gt; <br/>
+          &lt;img loading="lazy" src="https://www.online-notepad.net/assets/imgs/Icons/list2.svg" alt="file protection" width="38px" height="38px"&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div&gt; <br/>
+          &lt;h4 class="step-hd"&gt;Protección de archivos&lt;/h4&gt; <br/>
+          &lt;p&gt;No importa qué tipo de texto conserve con nosotros, nunca nos infiltramos en sus archivos ya que nunca almacenamos ni retenemos datos en nuestros servidores personales directamente. Además, el usuario puede cifrar cada archivo protegido con una contraseña para restringir el acceso.&lt;/p&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="single-step"&gt; <br/>
+        &lt;div class="list-head"&gt; <br/>
+         &lt;div class="why-best-icon"&gt; <br/>
+          &lt;img loading="lazy" src="https://www.online-notepad.net/assets/imgs/Icons/list3.svg" alt="advanced Editing" width="38px" height="38px"&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div&gt; <br/>
+          &lt;h4 class="step-hd"&gt;Edición avanzada&lt;/h4&gt; <br/>
+          &lt;p&gt;Junto con un útil block de notas online, este también es un buen editor de texto online que le permite manejar el texto como lo desee. Con su función de edición de texto enriquecido, puede editar longitudes y anchuras de texto, fuente, tamaño, estilo, forma y demás.&lt;/p&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="single-step"&gt; <br/>
+        &lt;div class="list-head"&gt; <br/>
+         &lt;div class="why-best-icon"&gt; <br/>
+          &lt;img src="https://www.online-notepad.net/assets/imgs/Icons/list4.svg" alt="Full Options" width="37px" height="37px"&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div&gt; <br/>
+          &lt;h4 class="step-hd"&gt;Opciones completas&lt;/h4&gt; <br/>
+          &lt;p&gt;Teniendo en cuenta la gama de opciones que ofrece nuestro bloc de notas digital, esta es sin duda la mejor opción disponible para escribir notas online y edición de texto. Es un bloc de notas online gratis más un smart notas en linea, con opciones de encriptación, uso compartido y descarga de archivos.&lt;/p&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/section&gt; <br/>
+   &lt;section id="home-conetnt" class="py-2"&gt; <br/>
+    &lt;div class="container"&gt; <br/>
+     &lt;div class="row d-flex align-items-center"&gt; <br/>
+      &lt;div class="col-lg-8 mx-auto"&gt; <br/>
+       &lt;h4 class="question"&gt;Verdadera manifestación de simplicidad, productividad, privacidad y velocidad.&lt;/h4&gt; <br/>
+       &lt;p&gt;Todas estas son características distintivas de nuestro bloc notes online y editor de texto gratuito. Los usuarios obtienen una gran experiencia escribiendo y editando notas con un diseño fácil de usar, pueden administrar varios archivos a la vez y realizar varias acciones en todos, pueden mantener los archivos protegidos con cifrado y contraseña personalizada, y todo esto se puede hacer en un ritmo vertiginoso.&lt;/p&gt; <br/>
+       &lt;p&gt;&nbsp;&lt;/p&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="col-lg-4 text-end d-lg-block d-none"&gt; <br/>
+       &lt;img loading="lazy" class="img-fluid" src="https://www.online-notepad.net/assets/imgs/content-illusta.svg" alt="content illusta" width="245px" height="189px"&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/section&gt; &lt;!-- blog section ends here --&gt; <br/>
+   &lt;section id="faq" class="py-40"&gt; <br/>
+    &lt;div class="container"&gt; <br/>
+     &lt;div class="row"&gt; <br/>
+      &lt;div class="col-lg-6 d-lg-block d-none text-center"&gt; <br/>
+       &lt;img loading="lazy" src="https://www.online-notepad.net/assets/imgs/faq-banner.svg" alt="faqs banner" width="340px" height="303px"&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="col-lg-6"&gt; <br/>
+       &lt;h3 class="service-card-heading mt-3 text-center"&gt;FAQs&lt;/h3&gt; <br/>
+       &lt;div class="accordion accordion-flush" id="faqlist"&gt; <br/>
+        &lt;div class="accordion-item"&gt; <br/>
+         &lt;h2 class="accordion-header"&gt; &lt;button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1" aria-expanded="false"&gt; ¿Necesito crear una cuenta primero para usar bloc de nota online? &lt;/button&gt; &lt;/h2&gt; <br/>
+         &lt;div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist"&gt; <br/>
+          &lt;div class="accordion-body" style="text-align: justify"&gt; <br/>
+           &lt;p&gt;¡NO! No es necesario que se registre o inicie sesión con ningún dato personal antes de utilizar nuestro bloc de notas virtual. Todo lo que necesita es visitar nuestro bloc de notas gratis y comenzar a escribir o editar lo que desee al instante.&lt;/p&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+        &lt;div class="accordion-item mt-3"&gt; <br/>
+         &lt;h2 class="accordion-header"&gt; &lt;button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4"&gt;¿Todas las funciones mencionadas anteriormente son gratuitas?&lt;/button&gt; &lt;/h2&gt; <br/>
+         &lt;div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist"&gt; <br/>
+          &lt;div class="accordion-body" style="text-align: justify"&gt; <br/>
+           &lt;p&gt;¡Sí! Desde escribir hasta editar texto en línea, compartir, encriptar, descargar, todas las características de este bloc de nota online son absolutamente gratis. No restringimos su número de usos.&lt;/p&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+        &lt;div class="accordion-item mt-3"&gt; <br/>
+         &lt;h2 class="accordion-header"&gt; &lt;button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5"&gt; ¿Mis notas están seguras aquí? &lt;/button&gt; &lt;/h2&gt; <br/>
+         &lt;div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist"&gt; <br/>
+          &lt;div class="accordion-body" style="text-align: justify"&gt; <br/>
+           &lt;p&gt;Bueno, dado que es un bloc notas online donde todas las operaciones se realizan en la nube, no tenemos acceso directo a sus archivos ni almacenamos ni retenemos ninguno de sus datos con nosotros, así que sí, sus archivos están absolutamente seguros. .&lt;/p&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+        &lt;div class="accordion-item mt-3"&gt; <br/>
+         &lt;h2 class="accordion-header"&gt; &lt;button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2"&gt;¿Puedo administrar varias notas a la vez en este bloc de notas en línea? &lt;/button&gt; &lt;/h2&gt; <br/>
+         &lt;div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist"&gt; <br/>
+          &lt;div class="accordion-body" style="text-align: justify"&gt; <br/>
+           &lt;p&gt;¡Sí! Puede escribir, editar y administrar varios archivos a la vez con nuestro bloc de notas on line mientras tiene una vista completa de todos los demás archivos simultáneamente.&lt;/p&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/section&gt; &lt;!-- preview text model --&gt; <br/>
+   &lt;div class="modal"&gt; <br/>
+    &lt;div class="modal-content"&gt; &lt;span id="close"&gt;×&lt;/span&gt; <br/>
+     &lt;h3&gt;Preview Your Message: &lt;/h3&gt; Name: <br/>
+     &lt;div id="modalname"&gt;&lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="modal fade" id="#exampleModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1"&gt; <br/>
+    &lt;div class="modal-dialog modal-dialog-centered"&gt; <br/>
+     &lt;div class="modal-content"&gt; <br/>
+      &lt;div class="modal-header"&gt; <br/>
+       &lt;h5 class="modal-title" id="exampleModalToggleLabel"&gt;Modal 1 &lt;/h5&gt; &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt;&lt;/button&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="modal-body"&gt;<br/>
+        Show a second modal and hide this one with the button below. <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="modal-footer"&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt; <br/>
+    &lt;div class="modal-dialog modal-dialog-centered m-4 m-md-auto m-lg-auto"&gt; <br/>
+     &lt;div class="modal-content py-2"&gt; <br/>
+      &lt;div class="modal-header border-0 text-center"&gt; <br/>
+       &lt;h4 class="modal-title w-100"&gt;Enter Password&lt;/h4&gt; &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt;&lt;/button&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="modal-body text-center"&gt; <br/>
+       &lt;form class="row g-3 justify-content-center"&gt; <br/>
+        &lt;div class="col-6"&gt; <br/>
+         &lt;input class="form-control" placeholder="Password" type="password" name="" id="note_password"&gt; <br/>
+         &lt;p class="invalid-feedback"&gt;Password can't be empty!&lt;/p&gt; <br/>
+        &lt;/div&gt; <br/>
+        &lt;div class="col-3"&gt; &lt;a type="button" class="btn save-btn " id="passwordSUBtn" data-url="/note/save" data-updateid=""&gt; Ahorrar &lt;/a&gt; <br/>
+         &lt;input type="hidden" id="updateOnlyPassword"&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/form&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="modal fade" id="givePassword" tabindex="-1" aria-labelledby="givePasswordLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false"&gt; <br/>
+    &lt;div class="modal-dialog modal-dialog-centered"&gt; <br/>
+     &lt;div class="modal-content py-2"&gt; <br/>
+      &lt;div class="modal-header border-0 text-center"&gt; <br/>
+       &lt;h4 class="modal-title w-100"&gt;Password is required&lt;/h4&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="modal-body text-center pt-0"&gt; <br/>
+       &lt;form class="row g-3 align-items-center justify-content-center"&gt; <br/>
+        &lt;div class="col-6  has-validation"&gt; <br/>
+         &lt;input class="form-control" placeholder="Password" type="password" name="" id="protected_note" autofocus&gt; <br/>
+        &lt;/div&gt; <br/>
+        &lt;div class="col-3"&gt; &lt;a href="" class="btn btn-dark" style="color: #fff!important" data-protected="" data-url="" data-secretid="" data-method="" id="notePasswordBtn"&gt; Submit &lt;/a&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/form&gt; <br/>
+       &lt;p id="wrongPassEror" class="text-center mt-3 text-danger" style="display: none"&gt;Password does not match our records&lt;/p&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="modal fade" id="getEmail" tabindex="-1" aria-labelledby="getEmailLabel" aria-hidden="true"&gt; <br/>
+    &lt;div class="modal-dialog modal-dialog-centered"&gt; <br/>
+     &lt;div class="modal-content py-2"&gt; <br/>
+      &lt;div class="modal-header border-0 text-center"&gt; <br/>
+       &lt;h4 class="modal-title w-100"&gt;Enter Receiver's Email &lt;/h4&gt; &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt;&lt;/button&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="modal-body text-center pt-0"&gt; <br/>
+       &lt;form class="row g-3 align-items-center justify-content-center" action="" method="POST"&gt; <br/>
+        &lt;input type="hidden" name="_token" value="WwejeRHAmOwzj6HPzUo2zYgAL9ept3wFpnIQHdKy"&gt; <br/>
+        &lt;input type="hidden" id="viamailLink" name="shared_link"&gt; <br/>
+        &lt;div class="col-6  has-validation"&gt; <br/>
+         &lt;input class="form-control " placeholder="Email" type="email" name="receiver_email" id="receiver_email"&gt; <br/>
+        &lt;/div&gt; <br/>
+        &lt;div class="col-3"&gt; &lt;a href="" id="shareNoteViaMail" data-url="note/shareviemail" data-method="POST" class="btn btn-dark" style="color: #fff!important"&gt; Send &lt;span span="" class="spinner-border spinner text-white" role="status"&gt; &lt;span class="sr-only visually-hidden"&gt;Loading...&lt;/span&gt; &lt;/span&gt; &lt;/a&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/form&gt; <br/>
+       &lt;p id="emailRequired" class="text-center mt-3 text-danger" style="display: none"&gt; Please enter Receiver's Email &lt;/p&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="modal fade" id="notFound" tabindex="-1" aria-labelledby="notFoundLabel" aria-hidden="true"&gt; <br/>
+    &lt;div class="modal-dialog modal-dialog-centered"&gt; <br/>
+     &lt;div class="modal-content py-2"&gt; <br/>
+      &lt;div class="modal-header border-0 text-center"&gt; <br/>
+       &lt;h4 class="modal-title w-100"&gt;Not Found!&lt;/h4&gt; &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt;&lt;/button&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="modal-body text-center pt-0"&gt; <br/>
+       &lt;h3&gt;Sorry the Link is invalid or Expired&lt;/h3&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+  &lt;/div&gt; <br/>
+  &lt;div class="w-100 bg-white border text-dark text-center my-sticky-div example_responsive_1"&gt; &lt;button class="p-4 btn toggleButton shadow-none"&gt; X &lt;/button&gt; <br/>
+   &lt;div align="center" class="ad-zone ad-space ad-unit textads banner-ads banner_ads" style="padding:0;position: relative;"&gt; &lt;!-- horizontal ads unit --&gt; <br/>
+    &lt;ins class="adsbygoogle reponsiveAds" style="display:block;" data-ad-client="ca-pub-6081967606533178" data-ad-slot="8523649781" data-size="auto"&gt;&lt;/ins&gt; <br/>
+    &lt;script&gt;<br/>
+                (adsbygoogle = window.adsbygoogle || []).push({});<br/>
+            &lt;/script&gt; <br/>
+   &lt;/div&gt; <br/>
+  &lt;/div&gt; <br/>
+  &lt;footer id="footern" class=" border-top border-1 "&gt; <br/>
+   &lt;div class="container py-40"&gt; <br/>
+    &lt;div class="row  "&gt; <br/>
+     &lt;div class="col-lg-4 text-start   "&gt; &lt;a href="https://www.online-notepad.net/es/bloc-de-notas-online"&gt; &lt;img class="logo" src="https://www.online-notepad.net/assets/imgs/note-logo.svg" alt="My Logo" width="182.31" height="60"&gt; &lt;/a&gt; <br/>
+      &lt;p class="text-start footer-text mb-0 mb-md-2 mb-lg-2"&gt;La toma y edición de notas en línea no podría ser mejor, más segura y más inteligente.&lt;/p&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="col-lg-4  text-start"&gt; <br/>
+      &lt;div class="d-flex justify-content-start justify-content-lg-center mt-0 mt-md-3 mt-lg-3"&gt; <br/>
+       &lt;ul class="list-unstyled mb-0"&gt; <br/>
+        &lt;li&gt;&lt;a href="https://www.online-notepad.net"&gt;Hogar&lt;/a&gt;&lt;/li&gt; <br/>
+        &lt;li&gt;&lt;a href="https://www.online-notepad.net/blog"&gt;Blog&lt;/a&gt;&lt;/li&gt; <br/>
+        &lt;li&gt;&lt;a href="https://www.online-notepad.net/policies"&gt;Política de privacidad&lt;/a&gt;&lt;/li&gt; <br/>
+       &lt;/ul&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="col-lg-4 text-start  "&gt; <br/>
+      &lt;div class="d-flex justify-content-lg-end justify-content-start justify-content-lg-center mt-0 mt-md-3 mt-lg-3"&gt; <br/>
+       &lt;ul class="list-unstyled "&gt; <br/>
+        &lt;li&gt;&lt;a href="https://www.online-notepad.net/contact-us"&gt;Contacta con nosotras&lt;/a&gt;&lt;/li&gt; <br/>
+        &lt;li&gt;&lt;a href="https://www.online-notepad.net/terms-and-conditions"&gt;Términos y condiciones&lt;/a&gt;&lt;/li&gt; <br/>
+        &lt;li&gt; &lt;a class="me-3" href="https://www.facebook.com/OnlineNotepad.net/"&gt;&lt;img src="https://www.online-notepad.net/assets/icons/facebook.svg" alt="facebook icon" width="24px" height="24px"&gt;&lt;/a&gt; &lt;a class="me-3" href="https://www.pinterest.com/onlinenotepad1/"&gt; &lt;img src="https://www.online-notepad.net/assets/imgs/Icons/pintrest.svg" alt="pinterest icon" width="24px" height="24px"&gt;&lt;/a&gt; &lt;a href="https://twitter.com/OnlineNotepad1"&gt; &lt;img src="https://www.online-notepad.net/assets/icons/twitter.svg" alt="twitter icon" width="24px" height="24px"&gt;&lt;/a&gt; &lt;/li&gt; <br/>
+       &lt;/ul&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;p class="text-center text-dark border-top pt-2 pb-5 mb-5"&gt;© 2022 - Todos los derechos reservados.&lt;/p&gt; <br/>
+  &lt;/footer&gt; &lt;button class="p-4" onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;"&gt;&lt;/button&gt; <br/>
+  &lt;script src="https://www.online-notepad.net/assets/js/jquery-3.6.0.js"&gt;&lt;/script&gt; <br/>
+  &lt;script src="https://www.online-notepad.net/assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt; <br/>
+  &lt;script&gt;<br/>
+    var mybutton = document.getElementById("myBtn");<br/>
+    window.onscroll = function() {<br/>
+        scrollFunction()<br/>
+    };<br/>
+    function scrollFunction() {<br/>
+        if (document.body.scrollTop &gt; 20 || document.documentElement.scrollTop &gt; 20) {<br/>
+            mybutton.style.display = "block";<br/>
+        } else {<br/>
+            mybutton.style.display = "none";<br/>
+        }<br/>
+    }<br/>
+    function topFunction() {<br/>
+        document.body.scrollTop = 0;<br/>
+        document.documentElement.scrollTop = 0;<br/>
+    }<br/>
+<br/>
+    $('.toggleButton').click(function() {<br/>
+        $('.my-sticky-div').toggleClass('bottom');<br/>
+    });<br/>
+&lt;/script&gt; <br/>
+  &lt;script data-ad-client="ca-pub-6081967606533178" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-type="lazy"&gt;&lt;/script&gt; <br/>
+  &lt;script id="flying-scripts" type="text/javascript"&gt;<br/>
+    const userInteractionEvents = ["mouseover", "keydown", "touchstart", "touchmove", "wheel"];<br/>
+    userInteractionEvents.forEach(function(event) {<br/>
+        window.addEventListener(event, triggerScriptLoader, {<br/>
+            passive: !0<br/>
+        })<br/>
+    });<br/>
+<br/>
+    function triggerScriptLoader() {<br/>
+        loadScripts();<br/>
+        userInteractionEvents.forEach(function(event) {<br/>
+            window.removeEventListener(event, triggerScriptLoader, {<br/>
+                passive: !0<br/>
+            })<br/>
+        })<br/>
+    }<br/>
+<br/>
+    function loadScripts() {<br/>
+        document.querySelectorAll("script[data-type='lazy']").forEach(function(elem) {<br/>
+            elem.setAttribute("src", elem.getAttribute("data-src"))<br/>
+        })<br/>
+    }<br/>
+&lt;/script&gt; <br/>
+  &lt;script&gt;<br/>
+        $('#protected_note, #note_password').keypress(function(event){<br/>
+            if (event.which == '13') {<br/>
+                event.preventDefault();<br/>
+            }<br/>
+        });<br/>
+    &lt;/script&gt; <br/>
+  &lt;script src="https://www.online-notepad.net/assets/js/jquery.ui.touch-punch.min.js"&gt;&lt;/script&gt; <br/>
+  &lt;script&gt;<br/>
+            initiateCodes();<br/>
+            appendExtraFiles();<br/>
+            // append extra JS files<br/>
+            function appendExtraFiles() {<br/>
+                var jsFiles = [<br/>
+                    "https://www.online-notepad.net/assets/js/jquery-ui.min.js",<br/>
+                    "https://www.online-notepad.net/assets/ck-edit/sample/ckeditor.js?v=1.0.2",<br/>
+                    "https://www.online-notepad.net/assets/js/notes.js?v=1.0.8"<br/>
+                ];<br/>
+<br/>
+                setTimeout(function() {<br/>
+                    var bodyID = document.getElementsByTagName("body")[0];<br/>
+                    for (let index = 0; index &lt; jsFiles.length; index++) {<br/>
+                        var newScript = document.createElement('script');<br/>
+                        newScript.type = 'text/javascript';<br/>
+                        newScript.src = jsFiles[index];<br/>
+                        bodyID.appendChild(newScript);<br/>
+                    }<br/>
+                }, 2000);<br/>
+            }<br/>
+<br/>
+            function initiateCodes(){<br/>
+<br/>
+                setTimeout(function(){<br/>
+                    // initial rich editor<br/>
+                    DecoupledDocumentEditor<br/>
+                    .create(document.querySelector('#editor'), {<br/>
+                        extraPlugins: [SimpleUploadAdapter],<br/>
+                        removePlugins: ['MediaEmbed']<br/>
+                    })<br/>
+                    .then(editor =&gt; {<br/>
+                        const toolbarContainer = document.querySelector('main .toolbar-container');<br/>
+<br/>
+                        toolbarContainer.prepend(editor.ui.view.toolbar.element);<br/>
+<br/>
+                        window.editor = editor;<br/>
+                    })<br/>
+                    .catch(err =&gt; {<br/>
+                        console.error(err.stack);<br/>
+                    });<br/>
+<br/>
+                    // initiate sortable<br/>
+                    $(function() {<br/>
+                        $("#sortable").sortable();<br/>
+                    });<br/>
+                },2500)<br/>
+            }<br/>
+            $(".choosedLang").on('click',function(){<br/>
+                const selectedURL = $(this).data('href');<br/>
+            })<br/>
+        &lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="https://www.online-notepad.net/assets/js/jquery-ui.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://www.online-notepad.net/assets/ck-edit/sample/ckeditor.js?v=1.0.2"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://www.online-notepad.net/assets/js/notes.js?v=1.0.8"&gt;&lt;/script&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
